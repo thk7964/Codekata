@@ -10,8 +10,8 @@ public class Main {
         System.out.println("두번째 숫자를 입력하세요 :");
         int n2 = sc.nextInt();
 
-        System.out.println("두 수의 차"+ sub(n,n2));
-        System.out.println("두 수의 곱"+ sub(n,n2));
+        System.out.println("두 수의 차 :"+ sub(n,n2));
+        System.out.println("두 수의 곱 : "+ mul(n,n2));
 
     }
    // 두수의 차
