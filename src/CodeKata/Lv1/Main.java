@@ -10,17 +10,22 @@ public class Main {
         System.out.println("두번째 숫자를 입력하세요 :");
         int n2 = sc.nextInt();
 
-        System.out.println("두 수의 차 :"+ sub(n,n2));
-        System.out.println("두 수의 곱 : "+ mul(n,n2));
+//        System.out.println("두 수의 차 :"+ sub(n,n2));
+//        System.out.println("두 수의 곱 : "+ mul(n,n2));
+        System.out.println("두 수의 몫 : "+ div(n,n2));
 
     }
    // 두수의 차
-   static int sub(int n1, int n2){
-        return n1-n2;
-    }
-
-    //두수의 곱
-    static int mul(int n1, int n2){
-        return n1*n2;
+//   static int sub(int n1, int n2){
+//        return n1 - n2;
+//    }
+//
+//    //두수의 곱
+//    static int mul(int n1, int n2){
+//        return n1 * n2;
+//    }
+    //몫 구하기
+    static int div(int n1, int n2){
+        return n1 / n2;
     }
 }
