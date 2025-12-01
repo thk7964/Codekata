@@ -10,6 +10,6 @@ class Solution {
         for(int i=left.length()-1; i>=0; i-- ){
           answer+=left.charAt(i);              
         }
-        return left + 0 +answer;
+        return left + "0" +answer;
     }
 }
