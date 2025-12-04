@@ -1,7 +1,6 @@
 class Solution {
     public String solution(int a, int b) {
         String answer = "";
-        
         int[] days = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         
         int tot=0;
