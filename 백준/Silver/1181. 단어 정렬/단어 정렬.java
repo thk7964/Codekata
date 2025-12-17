@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -8,8 +6,9 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-
+ 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int a = Integer.parseInt(bf.readLine());
 
         Set<String> set=new HashSet<>();//중복을 잡아줌
@@ -29,7 +28,10 @@ public class Main {
         });
 
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+            bw.write(list.get(i)+"\n");
         }
+        bw.flush(); // 출력 밀어내기
+        bw.close();
+        bf.close();
     }
 }
